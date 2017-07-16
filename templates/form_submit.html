@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<title>Flask</title>
+<link rel=stylesheet type="text/css" href="/static/style.css" title="stylesheet">
+</head>
+<body>
+
+{% if website_links %}
+  <b> {{ website_links|safe }} </b>
+{% endif %}
+
+<p>Thank you for adding your name.</p>
+
+{% if name %}
+  <h1>Hello {{ name }}.</h1>
+{% else %}
+  <h1>Hello.</h1>
+{% endif %}
+
+
+
+</body>
+</html>

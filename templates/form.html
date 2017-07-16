@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<title>Flask</title>
+<link rel=stylesheet type="text/css" href="/static/style.css" title="stylesheet">
+</head>
+<body>
+
+{% if website_links %}
+  <b> {{ website_links|safe }} </b>
+{% endif %}
+
+<p>Enter your name.</p>
+
+<form action="/add_post" method="post">
+  <input name="name">
+  <input type="submit" name="submit">
+</form>
+
+</body>
+</html>

@@ -18,7 +18,11 @@
   <h1>Hello.</h1>
 {% endif %}
 
-
+{% if user_list %}
+  <h1>User list: {{ user_list }}.</h1>
+{% else %}
+  <h1>No user list.</h1>
+{% endif %}
 
 </body>
 </html>

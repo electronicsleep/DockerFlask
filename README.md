@@ -2,6 +2,7 @@ Docker Flask Redis starter example website
 
 ```
 # Flask only
+pip install -r requirements.txt
 export FLASK_APP=Main.py
 flask run
 
